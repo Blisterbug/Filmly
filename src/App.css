@@ -1,0 +1,14 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    /* background: linear-gradient(to right, #89253E, #3A6186); */
+    color: #ffffff;
+}
+
+/* gradients :
+1. #F3904F, #3B4371
+2. #89253E, #3A6186 */
+
+
