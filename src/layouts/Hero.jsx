@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="relative bg-gray-100 text-black shadow flex items-center border-none overflow-hidden w-full h-full">
                     {/* Image */}
                     <img
-                        src="/src/assets/netflix.jpg"
+                        src="../src/assets/netflix.jpg"
                         alt="Image"
                         className="h-full w-full object-fill"
                     />
