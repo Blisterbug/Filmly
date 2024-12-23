@@ -12,7 +12,7 @@ This is a movie website named Filmly, where users can browse, search, and view i
 
 ## Tech Stack
 
-- **Frontend**: React.js, Tailwind CSS, Axios
+- **Frontend**: React.js, Tailwind CSS
 
 ## Contribution 
 

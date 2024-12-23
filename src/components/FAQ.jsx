@@ -46,13 +46,8 @@ const FAQ = () => {
               className="faq-question w-full p-8 bg-gray-600/40 rounded-xl text-2xl font-medium text-left flex justify-between items-center hover:bg-gray-500/50"
             >
               {faq.question}
-              <span className="text-4xl">{openIndex === index ? <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-gray-500">
-                <i class="fas fa-times"></i>
-              </div>
-                : <div class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-gray-500">
-                  <i class="fas fa-plus"></i>
-                </div>
-              }</span>
+              <span className="text-4xl">{openIndex === index ? '-'
+                : '+'}</span>
             </button>
             {openIndex === index && (
               <div className="faq-answer mt-2 pl-6 text-white bg-black/70 p-4 text-2xl">
