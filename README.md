@@ -1,8 +1,32 @@
-# React + Vite
+# Filmly: Trending Movies & Details at Your Fingertips
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Movie Website
 
-Currently, two official plugins are available:
+This is a movie website named Filmly, where users can browse, search, and view information about movies. The site provides detailed movie information, including ratings, descriptions, cast, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Movie Listings**: View a list of popular movies with poster images, titles, and ratings.
+- **Movie Details**: View detailed information about a movie, including a description, cast, ratings, and release date.
+- **Pagination**: Navigate through pages of movie listings.
+
+## Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS, Axios
+
+## Contribution 
+
+If you'd like to contribute to the project, please fork the repository and submit a pull request with your changes. Ensure that all tests pass and that your code adheres to the project's style guidelines.
+  
+## Setup
+
+### Prerequisites
+
+- Node.js and npm installed.  
+  Download and install from [here](https://nodejs.org/).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/movie-website.git
