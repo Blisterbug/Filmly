@@ -10,14 +10,14 @@ const SignIn = ({
     return (
         <div className="grid grid-rows-1 z-auto">
             <div>
-            <div className='mt-4'><Link to="/" className='mt-4 text-2xl'> <i className="fas fa-chevron-left m-1"></i>Go to home page</Link></div>
+            <div className='pt-2 bg-black/20'><Link to="/" className='mt-4 text-2xl'> <i className="fas fa-chevron-left m-1"></i>Go to home page</Link></div>
                 <div
                     className="relative bg-gray-100 text-black shadow flex items-center border-none overflow-hidden w-full h-full"
                 // style={{ width: "1300px", height: "580px" }}
                 >
                     {/* Image */}
                     <img
-                        src="../src/assets/background_banner.jpg"
+                        src="../netflix.jpg"
                         alt="Image"
                         className="h-full w-full object-fill shadow-lg "
                     />
