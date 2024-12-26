@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import styles from '/MobileHorizontalCard.module.css';
@@ -56,11 +57,11 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
         setTimeout(onClose, 300); // Matches the animation duration in CSS
     };
 
-    return (
+    const PopoverContent = (
         <>
             {/* Backdrop */}
             <div
-                className="fixed inset-0 bg-black/30 backdrop-blur-md  z-10"
+                className="fixed inset-0 bg-black/30 backdrop-blur-md z-10"
                 onClick={handleClose}
             ></div>
             {/* Popover */}
@@ -69,7 +70,7 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
                     }`}
                 style={{
                     width: "calc(100% - 32px)",
-                    height:"650px",
+                    height: "650px",
                     maxWidth: "350px",
                     maxHeight: "80vh",
                     overflowY: "auto",
@@ -115,7 +116,9 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
             </div>
         </>
     );
-};
 
+    // Render the PopoverContent using React Portal
+    return ReactDOM.createPortal(PopoverContent, document.body);
+};
 
 export default MobileVerticalCard;
