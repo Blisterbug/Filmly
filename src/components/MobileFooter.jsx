@@ -1,13 +1,9 @@
 import React from 'react';
 import Icons from './Icons';
-import MobileFooter from './MobileFooter';
 
-const Footer = () => {
-
+const MobileFooter = () => {
   return (
-    <>
-    
-    <footer className="bg-black text-gray-400 py-10 w-full overflow-x-hidden hidden sm:block">
+    <footer className="bg-black text-gray-400 py-10 w-full overflow-x-hidden p-4">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:px-6 lg:px-8 w-full pt-6">
 
         {/* Left Section*/}
@@ -16,7 +12,7 @@ const Footer = () => {
             <a href="https://support.google.com/" target="_blank" className="text-blue-700">Help centre</a> or call us: <a className='text-blue-700'>003-0235-112-56</a>
           </h3>
           {/* <p className='mb-3'>Terms and conditions apply. Join here for exclusive movie updates from Filmly</p> */}
-          <div className='grid grid-cols-3 gap-x-4 gap-y-6'>
+          <div className='grid justify-start items-start text-left gap-y-4 pl-2'>
             <a className='hover:underline'>FAQ</a>
             <a className='hover:underline'>Cookie Preferences</a>
             <a className='hover:underline'>Investor Relations</a>
@@ -36,7 +32,7 @@ const Footer = () => {
         {/* Right Section*/}
         <div className="lg:w-1/2 flex flex-col items-center">
 
-          <p className='mb-8 text-xl'> Join here for exclusive movie updates from Filmly</p>
+          <p className='mb-6 text-lg text-left pl-2 leading-relaxed'> Join here for exclusive movie updates from Filmly</p>
 
           <input
             type="email"
@@ -46,7 +42,7 @@ const Footer = () => {
           />
           <button
             aria-label="Get updates"
-            className="mt-6 bg-purple text-white font-semibold px-20 py-3 rounded-lg hover:bg-darkpurple transition-all duration-200"
+            className="mt-6 bg-purple text-white font-semibold px-14 py-3 rounded-lg hover:bg-darkpurple transition-all duration-200"
           >
             Get updates
           </button>
@@ -68,11 +64,7 @@ const Footer = () => {
         <Icons />
       </div>
     </footer>
-    <div className='block sm:hidden'>
-      <MobileFooter/>
-    </div>
-    </>
   );
 };
 
-export default Footer;
+export default MobileFooter;

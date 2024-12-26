@@ -1,25 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import HorizontalCard from "../cards/HorizontalCard"
-import HorizontalMainCard from '../cards/HorizontalMainCard'
-import VerticalCard from '../cards/VerticalCard'
-import HorizontalBigCard from '../cards/HorizontalBigCard'
-import VerticalBigCard from '../cards/VerticalBigCard'
-import Footer from '../components/Footer'
-import MobileMovies from './MobileMovies'
+import MobileHorizontalCard from "../cards/MobileHorizontalCard"
+import MobileHorizontalMainCard from "../cards/MobileHorizontalMainCard"
+import MobileVerticalCard from '../cards/MobileVerticalCard'
+import MobileFooter from '../components/MobileFooter'
 
 
-
-const Movies = () => {
+const MobileMovies = () => {
 
     return (
         <>
-        <div className='hidden sm:block'>
-            <div className='mt-4'><Link to="/" className='mt-4 text-2xl'> <i className="fas fa-chevron-left m-1"></i>Go to home page</Link></div>
-            <div className='grid '>
+            <div className='mt-4'><Link to="/" className='mt-4 text-xl'> <i className="fas fa-chevron-left m-2"></i>Go to home page</Link></div>
+            <div className=''>
                 <section>
-                    <div className='grid justify-center gap-6 p-4 pt-6'>
-                        <HorizontalMainCard
+                    <div className='p-4'>
+                        <MobileHorizontalMainCard
                             id="1"
                             name="Amaran"
                             rating="8.3"
@@ -38,9 +33,9 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6'>Newest Releases</h1>
-                    <div className='grid grid-cols-5 gap-10 p-4 pt-6'>
-                        <HorizontalCard
+                    <h1 className='text-2xl font-semibold pl-4'>Newest Releases</h1>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable '>
+                        <MobileHorizontalCard
                             id="1"
                             name="Amaran"
                             rating="8.3"
@@ -54,7 +49,7 @@ const Movies = () => {
                             trailer="https://youtu.be/hylIXfZeB4c?si=nuWOW-DHdQ_xvM5g"
                             plot="The life of Major Mukund Varadarajan and is set against the backdrop of the Qazipathri Operation in Shopian, Kashmir, which took place back in 2014."
                         />
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="2"
                             name="Maharaja"
                             rating="8.5"
@@ -68,7 +63,7 @@ const Movies = () => {
                             trailer="https://youtu.be/z37hCm4eges?si=Qy6QCp9aLx_Jg3Sz"
                             plot="A barber seeks vengeance after his home is burglarized, cryptically telling police his lakshmi has been taken, leaving them uncertain if it's a person or object. His quest to recover the elusive lakshmi unfolds."
                         />
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="3"
                             name="Kanguva"
                             rating="4.8"
@@ -82,7 +77,7 @@ const Movies = () => {
                             trailer="https://youtu.be/ajnCMSC4VPo?si=X2W0BkFp2g5B5udV"
                             plot="A tribal warrior's fierce struggle to save his people a millennium ago is mysteriously linked to a shadow cop's perilous quest in the present."
                         />
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="4"
                             name="Kishkindha Kandam"
                             rating="8.1"
@@ -96,7 +91,7 @@ const Movies = () => {
                             trailer="https://youtu.be/6jR7lL-o7js?si=42-_o0Vhpe821VGi"
                             plot="Strange events unfold in a monkey-inhabited village, prompting a newlywed pair and forest officials to embark on a mission to uncover the root cause of the peculiar disturbances"
                         />
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="5"
                             name="Thangalaan"
                             rating="6.9"
@@ -111,7 +106,7 @@ const Movies = () => {
                             plot="Based on the true events that revolve around the lives of mine workers in the Kolar Gold Fields, Karnataka."
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="39"
                             name="Hitler"
                             rating="5.2"
@@ -126,7 +121,7 @@ const Movies = () => {
                             plot="A hero with a genuine background involved with the political murders. What is the reason behind this that's the Story."
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="41"
                             name="Buddy"
                             rating="3.8"
@@ -141,7 +136,7 @@ const Movies = () => {
                             plot="A teddy bear named Buddy is in trouble and asks pilot Aditya Ram for help. Can the duo join forces and help each other out?"
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="42"
                             name="Ayalaan"
                             rating="6.0"
@@ -156,7 +151,7 @@ const Movies = () => {
                             plot="A lost alien seeks help to go back to his home, but everything gets harder after the alien returns to its home"
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="43"
                             name="Siren"
                             rating="6.4"
@@ -171,7 +166,7 @@ const Movies = () => {
                             plot="An ambulance driver turned criminal eagerly awaits his release from prison, but it takes 14 years."
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="44"
                             name="Deepavali Bonus"
                             rating="8.2"
@@ -186,7 +181,7 @@ const Movies = () => {
                             plot="A working class family in Madurai faces financial struggles as the Deepavali festival approaches, challenging their values and relationships while striving to provide for their son."
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="46"
                             name="Lover"
                             rating="7.0"
@@ -201,7 +196,7 @@ const Movies = () => {
                             plot="Arun and Divya's six-year relationship starts unraveling as they drift apart, raising the question of whether love can withstand such differences."
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="47"
                             name="Star"
                             rating="6.5"
@@ -216,7 +211,7 @@ const Movies = () => {
                             plot="Follows a youngster Kalai and his aspirations of becoming a 'Star' in the Tamil Film Industry. Born in a lower-middle-class family, will Kalai overcome all his struggles to emerge as a Star?"
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="48"
                             name="Virundhu"
                             rating="4.7"
@@ -231,7 +226,7 @@ const Movies = () => {
                             plot="A famous businessman committed suicide. After 6 months of his death, his wife Elizabeth, gets killed in a suspicious accident. On her deathbed, she tasks an auto driver with delivering a secret to Comrade Balettan"
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="49"
                             name="Byri"
                             rating="7.0"
@@ -246,7 +241,7 @@ const Movies = () => {
                             plot="A newly-widowed mother struggles to connect with her son as he copes with his father's death by immersing himself in the intense hobby of racing pigeons, threatening their relationship"
                         />
 
-                        <HorizontalCard
+                        <MobileHorizontalCard
                             id="50"
                             name="Mayan"
                             rating="9.2"
@@ -265,10 +260,10 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>2024 Top Rated</h1>
-                    <div className='grid grid-cols-7 gap-8 p-4 pt-6 space-y-2'>
+                    <h1 className='text-2xl font-semibold pl-4 pt-2'>2024 Top Rated</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4  hide-scrollbar touch-pan-x w-full scrollable'>
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="6"
                             name="Vettaiyan"
                             rating="7.1"
@@ -282,7 +277,7 @@ const Movies = () => {
                             trailer="https://youtu.be/zPqMbwmGC1U?si=LGf8kFtFLgKViBeB"
                             plot="Ruthless criminal activity is met with force from a maverick police officer with a disregard for the rules as he confronts an outbreak of lawlessness."
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="7"
                             name="Bagheera"
                             rating="6.8"
@@ -297,7 +292,7 @@ const Movies = () => {
                             plot="When society turns into a jungle, just one predator cries out for justice."
                         />
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="8"
                             name="Manjummel Boys"
                             rating="8.2"
@@ -313,7 +308,7 @@ const Movies = () => {
                         />
 
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="9"
                             name="Meiyazhagan"
                             rating="8.4"
@@ -328,7 +323,7 @@ const Movies = () => {
                             plot="A man's life is changed when he bumps into someone from his hometown in this moving Tamil-language drama; gentle scenes are occasionally punctuated by sporting threat and recollections of violence."
                         />
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="10"
                             name="Raayan"
                             rating="6.5"
@@ -343,7 +338,7 @@ const Movies = () => {
                             plot="A series of unfortunate events lead Raayan, a simpleton to be dragged into the dreaded world of crime and manipulation."
                         />
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="11"
                             name="Sir"
                             rating="8.5"
@@ -358,7 +353,7 @@ const Movies = () => {
                             plot="The people of Mangollai village like Colochi Saami and Saamikannu opposed education for the poor while people like Annadurai and Sivangaanam fought against oppression."
                         />
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="12"
                             name="Family Padam"
                             rating="9.3"
@@ -372,7 +367,7 @@ const Movies = () => {
                             trailer="https://youtu.be/73LH9O4uT0o?si=MTCqLwS_xDffneAq"
                             plot="Being a Middle Class Family That Can Afford Movie Tickets, They Dream of Producing a Whole New Movie to Fulfill Their Younger Son's Wish to Rediscover Himself Which Brings Grave Challenges"
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="30"
                             name="Indian 2"
                             rating="3.9"
@@ -386,7 +381,7 @@ const Movies = () => {
                             trailer="https://youtu.be/3bvBUT5pQYY?si=yE25vb7-ZrVwuSss"
                             plot="Senapathy, an ex-freedom fighter turned vigilante who fights against corruption. Senapathy returns to the country to aid a young man who has been exposing corrupt politicians in the country through videos on the internet."
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id= "61"
                             name= "Hot Spot"
                             rating= "7.2"
@@ -400,7 +395,7 @@ const Movies = () => {
                             trailer= "https://youtu.be/CV1ARpxfylY?si=B0d25yAraFLfJCBx"
                             plot= "It features three stories that are humorously evocative and a fourth one that's deeply disturbing."
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="32"
                             name="Emakku Thozhil Romance"
                             rating="6.0"
@@ -414,7 +409,7 @@ const Movies = () => {
                             trailer="https://youtu.be/Jc4MjAGeki4?si=nFhZj9YsN7Um9oBl"
                             plot="Assistant director Umashankar falls for Leo. Misunderstanding arises when Saranya gets pregnant by Prashant. Leo blames Umashankar, causing rift between them"
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="33"
                             name="Andhagan"
                             rating="6.7"
@@ -428,7 +423,7 @@ const Movies = () => {
                             trailer="https://youtu.be/SM563_YbcuQ?si=n6U1Kbx2gv-py3ls"
                             plot="A piano player pretending to be visually-impaired, unwittingly becomes entangled in a number of problems as he witnesses the murder of a former film actor."
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="35"
                             name="Mr Bachchan"
                             rating="3.6"
@@ -443,7 +438,7 @@ const Movies = () => {
                             plot="A straight-laced income tax officer suspended due to his unwavering honesty returns to his hometown and falls in love with a woman who reciprocates his feelings, before he is reinstated and tasked with raiding the home of a powerful man."
                         />
 
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="36"
                             name="White Rose"
                             rating="4.5"
@@ -457,7 +452,7 @@ const Movies = () => {
                             trailer="https://youtu.be/W4Yd8Mhpr8A?si=PvWBre4cuny-7MxZ"
                             plot="Divya's daughter is kidnapped, and she teams up with the police to confront the psychopathic abductor. ACP Vetri, connected to the case, grapples with a moral crisis. Can Divya rescue her child and will Vetri find redemption?"
                         />
-                        <VerticalCard
+                        <MobileVerticalCard
                             id="38"
                             name="Garudan"
                             rating="7.1"
@@ -476,9 +471,9 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>Trending Movies</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
-                        <HorizontalBigCard
+                    <h1 className='text-2xl font-semibold pl-4 '>Trending Movies</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                        <MobileHorizontalCard
                             id="13"
                             name="Petta Rap"
                             rating="4.5"
@@ -493,7 +488,7 @@ const Movies = () => {
                             plot="PETTA RAP tells the love journey of BALA (a middle class man whose ambition is to become the best action hero of Tamil movies.) and JANAKI (a local girl, who becomes a Pop Singer.)"
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="14"
                             name="PVT"
                             rating="7.6"
@@ -508,7 +503,7 @@ const Movies = () => {
                             plot="PVT- ''Pogumidam Vegu Thooramillai'' . Revolves around a unique story of transporting a body due to financial issues and the problems entrailed when humanitarian concerns dominate selfishness."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="16"
                             name="Lubber Pandhu"
                             rating="8.2"
@@ -523,7 +518,7 @@ const Movies = () => {
                             plot="Set against the rural backdrop, explores gully cricket stars Gethu and Anbu's intense rivalry. Anbu's romantic involvement with Gethu's daughter escalates the clash. Their skills and emotions are put to the ultimate test."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="17"
                             name="Bloody Beggar"
                             rating="6.2"
@@ -541,10 +536,10 @@ const Movies = () => {
                 </section>
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>Mystery & Thriller Movies</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
+                    <h1 className='text-2xl font-semibold pl-4 pt-2'>Mystery & Thriller Movies</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="18"
                             name="Black"
                             rating="7.1"
@@ -560,7 +555,7 @@ const Movies = () => {
                         />
 
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="23"
                             name="Merry Christmas"
                             rating="6.9"
@@ -575,7 +570,7 @@ const Movies = () => {
                             plot="Two strangers meet on a fateful Christmas Eve. A night of delirious romance turns into a nightmare. Revealing anything more would be a crime."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="45"
                             name="7/G"
                             rating="4.5"
@@ -590,7 +585,7 @@ const Movies = () => {
                             plot="Rajiv and Varsha, a couple with a five-year-old son, Rahul, moves to a new flat where Varsha faces paranormal activities. Can Varsha fight against supernatural forces to save their dream house, or she decides to leave her house to save her family?"
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="20"
                             name="Nirangal Moondru"
                             rating="6.3"
@@ -611,10 +606,10 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>Horror Movies</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
+                    <h1 className='text-2xl font-semibold pl-6 pt-2'>Horror Movies</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="27"
                             name="Sattam En Kaiyil"
                             rating="9.2"
@@ -629,7 +624,7 @@ const Movies = () => {
                             plot="An accident leads Gowtham to conceal a body in his car. Arrested for drunk driving, his impounded vehicle at the police station holds the hidden corpse. Complications ensue, compelling him to find an escape from the perilous circumstances."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="37"
                             name="Demonte Colony 2"
                             rating="6.7"
@@ -645,7 +640,7 @@ const Movies = () => {
                         />
 
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="40"
                             name="Aranmanai 4"
                             rating="9.2"
@@ -661,7 +656,7 @@ const Movies = () => {
                         />
 
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="53"
                             name="Oru Kadha Sollata Sir"
                             rating="6.3"
@@ -681,9 +676,9 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>Filmly Originals</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
-                        <VerticalBigCard
+                    <h1 className='text-2xl font-semibold pl-4 pt-2'>Filmly Originals</h1>
+                    <div className='overflow-x-auto flex p-4 pt-6  hide-scrollbar touch-pan-x w-full scrollable'>
+                        <MobileVerticalCard
                             id="19"
                             name="Vaazhai"
                             rating="7.8"
@@ -698,7 +693,7 @@ const Movies = () => {
                             plot="A twelve-year-old boy, Sivanandhan, his mother, sister, and friend navigate life's challenges, where a plantain tree, Vaazhai, becomes a central presence."
                         />
 
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="21"
                             name="Martin"
                             rating="2.4"
@@ -713,7 +708,7 @@ const Movies = () => {
                             plot="A journey of a man discovering himself, finding love and fighting for his motherland. Can he hold the fort on all three gates?"
                         />
 
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="22"
                             name="Brother"
                             rating="6.3"
@@ -728,7 +723,7 @@ const Movies = () => {
                             plot="A young man struggles to find his place after moving in with his sister and her in-laws."
                         />
 
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="24"
                             name="Miss You"
                             rating="5.1"
@@ -746,10 +741,10 @@ const Movies = () => {
                 </section>
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6'>Top Rated on IMDB</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
+                    <h1 className='text-2xl font-semibold pl-4'>Top Rated on IMDB</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="25"
                             name="Sorgavaasal"
                             duration="2h 15min"
@@ -764,7 +759,7 @@ const Movies = () => {
                             plot="A common man imprisoned in a corrupt system questions whether jails truly rehabilitate or push individuals deeper into crime's abyss."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="26"
                             name="Romeo"
                             rating="6.1"
@@ -779,7 +774,7 @@ const Movies = () => {
                             plot="A husband tries to win the love of his wife, who marries him because of familial obligation."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="28"
                             name="Kottukaali"
                             rating="6.5"
@@ -794,7 +789,7 @@ const Movies = () => {
                             plot="Meena, who loves a man from a lower caste but her family thinks she is possessed and cast the spell out of her."
                         />
 
-                        <HorizontalBigCard
+                        <MobileHorizontalCard
                             id="29"
                             name="Jolly O Gymkhana"
                             rating="8.6"
@@ -813,9 +808,9 @@ const Movies = () => {
 
 
                 <section>
-                    <h1 className='text-4xl font-semibold pl-6 pt-8'>Filmly on the Spotlight</h1>
-                    <div className='grid grid-cols-4 gap-6 p-4 pt-6'>
-                        <VerticalBigCard
+                    <h1 className='text-3xl font-semibold pl-6 pt-4'>Filmly on the Spotlight</h1>
+                    <div className='overflow-x-auto flex p-4 pt-4  hide-scrollbar touch-pan-x w-full scrollable pb-6'>
+                        <MobileVerticalCard
                             id="64"
                             name="Deadpool & Wolverine"
                             rating="7.6"
@@ -829,7 +824,7 @@ const Movies = () => {
                             trailer="https://youtu.be/73_1biulkYk?si=QDll-vK2IeM5OkgO"
                             plot="Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction."
                         />
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="65"
                             name="Lucky Bhaskar"
                             rating="8.1"
@@ -843,7 +838,7 @@ const Movies = () => {
                             trailer="https://youtu.be/vs6JMdKjoVI?si=M28IlcmBqV-CwzAi"
                             plot="A cash-strapped cashier working at a bank embarks on a risky investment scheme and soon gets drawn into the murky world of money laundering."
                         />
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="66"
                             name="Fallout"
                             rating="8.3"
@@ -857,7 +852,7 @@ const Movies = () => {
                             trailer="https://youtu.be/V-mugKDQDlg?si=uUjHJQxQUNRSXdgl"
                             plot="In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits."
                         />
-                        <VerticalBigCard
+                        <MobileVerticalCard
                             id="67"
                             name="Dune:Part Two"
                             rating="8.5"
@@ -872,16 +867,12 @@ const Movies = () => {
                             plot="Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible future."
                         />
                     </div>
-                    <Footer />
+                    <MobileFooter />
                 </section>
 
             </div>
-            </div>
-            <div className='block sm:hidden'>
-                <MobileMovies/>
-                </div>
         </>
     )
 }
 
-export default Movies
+export default MobileMovies

@@ -3,12 +3,32 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: #000000;
-    /* background: linear-gradient(to right, #89253E, #3A6186); */
     color: #ffffff;
 }
 
-/* gradients :
-1. #F3904F, #3B4371
-2. #89253E, #3A6186 */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* for Internet Explorer */
+    scrollbar-width: none;      /* for Firefox */
+  }
+  
+  .touch-pan-x {
+    touch-action: pan-x;  /* This enables horizontal touch scrolling */
+  }
+
+
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}
+
+.hover\:text-gray-400 {
+  pointer-events: auto; /* Ensure links are interactive */
+}
+
+
+  
+  
 
 

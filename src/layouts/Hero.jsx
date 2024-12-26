@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MobileHero from '../layouts/MobileHero'
 
 const Hero = () => {
 
     return (
+        <>
+        <div className="hidden sm:block">
         <div className="grid grid-rows-1 z-auto">
             {/* Main Hero Section */}
             <div>
@@ -88,6 +91,11 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+        </div>
+        <div className='block sm:hidden'>
+        <MobileHero />
+      </div>
+      </>
     );
 };
 

@@ -57,29 +57,9 @@ const FAQ = () => {
           </div>
         ))}
       </div>
-
-      <p className="text-lg pt-10 text-center">
-        Ready to watch? Enter your email to create or restart your
-        membership
-      </p>
-
-      <div className=" grid grid-cols-2 pl-48 gap-52 pt-6">
-        <input
-          type="email"
-          placeholder="Email address"
-          className="bg-white w-[550px] h-[55px] rounded-xl text-black font-semibold text-lg px-4"
-        />
-
-
-        <button
-          className="bg-darkpurple w-[150px] h-[55px] rounded-xl text-white font-semibold text-lg hover:bg-purple  transition-colors  ease-in-out"
-        >
-          Sign In
-        </button>
-
-      </div>
-
     </div>
+
+
   );
 };
 

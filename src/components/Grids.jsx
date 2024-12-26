@@ -1,7 +1,10 @@
 import React from 'react';
+import MobileGrids from '../components/MobileGrids'
 
 const Grids = () => {
     return (
+        <>
+        <div className='hidden sm:block'>
         <div className="grid grid-cols-6 gap-4 p-6">
             {/* Large item */}
             <div className="col-span-4 row-span-2 bg-gradient-to-r from-[#89253E] to-[#3A6186] text-white rounded-2xl flex flex-col justify-center items-center h-[317px] p-6">
@@ -63,6 +66,12 @@ const Grids = () => {
             </div>
 
         </div>
+        </div>
+
+        <div className='block sm:hidden'>
+            <MobileGrids/>
+        </div>
+        </>
     );
 };
 

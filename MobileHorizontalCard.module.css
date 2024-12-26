@@ -1,0 +1,29 @@
+/* Popover animation on slide in */
+.animateSlideIn {
+  animation: slideIn 500ms cubic-bezier(0.4, 0.15, 0.1, 1) forwards;
+}
+
+/* Popover animation on slide out */
+.animateSlideOut {
+  animation: slideOut 400ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+/* Keyframes for sliding in */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%); /* Start off-screen from the bottom */
+  }
+  to {
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+
+/* Keyframes for sliding out */
+@keyframes slideOut {
+  from {
+    transform: translateY(0); /* Start at the normal position */
+  }
+  to {
+    transform: translateY(100%); /* Move out of the screen to the bottom */
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import MobileSignIn from '../components/MobileSignIn'
 
 const SignIn = ({
 
@@ -8,6 +9,8 @@ const SignIn = ({
 }) => {
 
     return (
+        <> 
+        <div className="hidden sm:block">
         <div className="grid grid-rows-1 z-auto">
             <div>
             <div className='pt-2 bg-black/20'><Link to="/" className='mt-4 text-2xl'> <i className="fas fa-chevron-left m-1"></i>Go to home page</Link></div>
@@ -53,6 +56,11 @@ const SignIn = ({
             </div>
             <Footer />
         </div>
+        </div>
+        <div className='block sm:hidden'>
+            <MobileSignIn/>
+        </div>
+        </>
     );
 };
 
