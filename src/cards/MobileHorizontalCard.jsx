@@ -60,7 +60,7 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
         <>
             {/* Backdrop */}
             <div
-                className="fixed inset-0 bg-black/30 backdrop-blur-md z-10"
+                className="fixed inset-0 bg-black/30 backdrop-blur-md -z-0"
                 onClick={handleClose}
             ></div>
             {/* Popover */}
