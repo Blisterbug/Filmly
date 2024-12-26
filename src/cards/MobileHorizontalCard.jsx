@@ -65,10 +65,11 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
             ></div>
             {/* Popover */}
             <div
-                className={`fixed bottom-0 left-5 transform -translate-x-1/2 bg-white text-black rounded-t-2xl  shadow-lg transition-transform duration-300 ease-in-out hide-scrollbar ${isClosing ? styles.animateSlideOut : styles.animateSlideIn
+                className={`fixed bottom-0 left-5 transform -translate-x-1/2 bg-white text-black rounded-t-2xl z-20 shadow-lg transition-transform duration-300 ease-in-out hide-scrollbar ${isClosing ? styles.animateSlideOut : styles.animateSlideIn
                     }`}
                 style={{
                     width: "calc(100% - 32px)",
+                    height:"650px",
                     maxWidth: "350px",
                     maxHeight: "80vh",
                     overflowY: "auto",
