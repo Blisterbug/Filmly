@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <>
         <div className="hidden sm:block">
-        <div className="grid grid-rows-1 z-auto">
+        <div className="grid grid-rows-1">
             {/* Main Hero Section */}
             <div>
 
