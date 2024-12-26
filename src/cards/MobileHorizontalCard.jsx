@@ -60,12 +60,12 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
         <>
             {/* Backdrop */}
             <div
-                className="fixed inset-0 bg-black/30 backdrop-blur-md z-10"
+                className="relative inset-0 bg-black/30 backdrop-blur-md z-0"
                 onClick={handleClose}
             ></div>
             {/* Popover */}
             <div
-                className={`fixed bottom-0 left-5 transform -translate-x-1/2 bg-white text-black rounded-t-2xl z-20 shadow-lg transition-transform duration-300 ease-in-out hide-scrollbar ${isClosing ? styles.animateSlideOut : styles.animateSlideIn
+                className={`absolute bottom-0 left-5 transform -translate-x-1/2 bg-white text-black rounded-t-2xl z-20 shadow-lg transition-transform duration-300 ease-in-out hide-scrollbar ${isClosing ? styles.animateSlideOut : styles.animateSlideIn
                     }`}
                 style={{
                     width: "calc(100% - 32px)",
