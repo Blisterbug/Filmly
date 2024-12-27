@@ -18,7 +18,7 @@ const MobileVerticalCard = ({ id, name, poster, posterV, genre, plot, trailer, d
                         <img
                             src={posterV}
                             alt="Image"
-                            className="h-full w-full rounded-xl object-fill shadow-lg hover:scale-105 transition-all duration-200 ease-in"
+                            className="h-full w-full rounded-xl object-fill shadow-lg"
                         />
                     </div>
                 </button>
