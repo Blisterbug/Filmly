@@ -15,7 +15,7 @@ const Home = () => {
         <MoreCard />
       </div>
       <div className='block sm:hidden'>
-      <h1 className='text-3xl font-semibold p-4 pl-8 pt-10 bg-black text-white '>More reasons to join</h1>
+      <h1 className='text-4xl font-semibold p-4 pl-6 pt-10 bg-black text-white '>More reasons to join</h1>
         <MobileMoreCard />
       </div>
       <FAQ />

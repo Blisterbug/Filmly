@@ -2,7 +2,7 @@ import React from 'react';
 
 const MobileGrids = () => {
   return (
-    <div className="grid grid-cols-2 gap-2 p-4 max-w-[390px] mx-auto">
+    <div className="grid grid-cols-2 gap-2 p-2 max-w-[390px] mx-auto">
       {/* Large item */}
       <div className="col-span-2 row-span-2 bg-gradient-to-r from-[#89253E] to-[#3A6186] text-white rounded-xl flex flex-col justify-center items-center h-[180px] p-4">
         <h2 className="text-4xl font-bold text-center">Unlimited Entertainment</h2>

@@ -13,7 +13,7 @@ const MobileVerticalCard = ({ id, name, poster, posterV, genre, plot, trailer, d
                 <button onClick={() => setPopoverVisible(true)}>
                     <div
                         className="bg-gray-100 text-black rounded-3xl shadow flex items-center border-none"
-                        style={{ width: "180px", height: "220px" }}
+                        style={{ width: "162px", height: "220px" }}
                     >
                         <img
                             src={posterV}
@@ -72,7 +72,7 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
                     width: "calc(100% - 32px)",
                     height: "650px",
                     maxWidth: "350px",
-                    maxHeight: "80vh",
+                    maxHeight: "90vh",
                     overflowY: "auto",
                 }}
             >
