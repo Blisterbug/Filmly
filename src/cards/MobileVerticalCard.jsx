@@ -24,7 +24,7 @@ const MobileVerticalCard = ({ id, name, poster, posterV, genre, plot, trailer, d
                 </button>
             </div>
 
-            <div className="w-[200px] h-[35px] flex pt-2">
+            <div className="w-[180px] h-[35px] flex pt-2">
                 <div className="grid grid-rows-1 pl-3 gap-3">
                     <div className="text-lg">{name}</div>
                 </div>

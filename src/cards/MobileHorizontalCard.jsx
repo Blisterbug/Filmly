@@ -72,7 +72,7 @@ const Popover = ({ name, poster, posterV, genre, plot, trailer, duration, direct
                     width: "calc(100% - 32px)",
                     height: "650px",
                     maxWidth: "350px",
-                    maxHeight: "80vh",
+                    maxHeight: "90vh",
                     overflowY: "auto",
                 }}
             >
