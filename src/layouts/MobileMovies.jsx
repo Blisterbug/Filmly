@@ -34,7 +34,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 -z-0'>Newest Releases</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable '>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
                         <MobileHorizontalCard
                             id="1"
                             name="Amaran"
@@ -261,7 +261,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 pt-2 -z-0'>2024 Top Rated</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
 
                         <MobileVerticalCard
                             id="6"
@@ -472,7 +472,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 -z-0'>Trending Movies</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
                         <MobileHorizontalCard
                             id="13"
                             name="Petta Rap"
@@ -537,7 +537,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 pt-2'>Mystery & Thriller Movies</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
 
                         <MobileHorizontalCard
                             id="18"
@@ -607,7 +607,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-6 pt-2 -z-0'>Horror Movies</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
 
                         <MobileHorizontalCard
                             id="27"
@@ -677,7 +677,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 pt-2 -z-0'>Filmly Originals</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
                         <MobileVerticalCard
                             id="19"
                             name="Vaazhai"
@@ -742,7 +742,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-2xl font-semibold pl-4 -z-0'>Top Rated on IMDB</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable overscroll-y-auto'>
 
                         <MobileHorizontalCard
                             id="25"
@@ -809,7 +809,7 @@ const MobileMovies = () => {
 
                 <section>
                     <h1 className='text-3xl font-semibold pl-6 pt-4 -z-0'>Filmly on the Spotlight</h1>
-                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable pb-6'>
+                    <div className='overflow-x-auto flex p-4 pt-6 gap-6 hide-scrollbar touch-pan-x w-full scrollable pb-6 overscroll-y-auto'>
                         <MobileVerticalCard
                             id="64"
                             name="Deadpool & Wolverine"
